@@ -31,9 +31,9 @@ const page = () => {
             elements and make the most out of every day.
           </p>
           <p className="font-bold text-xl text-start">Our Features</p>
-          {features.map((item) => {
+          {features.map((item,key) => {
             return (
-              <ul className="p-2 list-disc flex flex-col items-start text-start list-inside">
+              <ul key={key} className="p-2 list-disc flex flex-col items-start text-start list-inside">
                 <li>{item}</li>
               </ul>
             );
